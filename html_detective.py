@@ -1,3 +1,17 @@
+# Overall key to get all the websites
+itemProp="url" href="/us/item/
+itemProp="url" href="/us/item/m86800096709/?ref=search_results"
+itemProp="url" href="/us/item/m24616916817/?ref=search_results"
+itemProp="url" href="/us/item/m35767022501/?ref=search_results"
+etc.
+
+As of 6/5/2019, there are 977 Sold results (when sorted by newest first.)
+WInnie the Pooh is the most recent item.
+
+website url needs to be str("www.mercari.com" + THE KEY FROM ABOVE)
+
+
+
 # Will scrape sold versus unsold for the following information:
 # example from: view-source:
 #https://www.mercari.com/us/item/m14911119778/?ref=search_results and
@@ -12,6 +26,11 @@
 Posted</p></div><p class="Text__ProductText-sc-40whai-0 fndAKa Text2__Text2Normal-sc-1tydp9s-0 jEADfG Text__Text2-sc-1lvlnjo-3 btEJox Text-sc-1lvlnjo-0 hzcXJu">06/05/19</p>
 
 Posted</p></div><p class="Text__ProductText-sc-40whai-0 fndAKa Text2__Text2Normal-sc-1tydp9s-0 jEADfG Text__Text2-sc-1lvlnjo-3 btEJox Text-sc-1lvlnjo-0 hzcXJu">05/30/19</p>
+
+# Number of likes/comments/ID
+:"ShippingClass"},"numLikes":0,"numComments":0,"created":1559772290,"categoryTitle":"Children's Books","tags":{"type":"id","generated":true,"id":"$Item:m14911119778.tags","typename":"ItemTag"},"photos":
+
+:"ShippingClass"},"numLikes":7,"numComments":0,"created":1559256975,"categoryTitle":"Children's Books","tags":{"type":"id","generated":true,"id":"$Item:m19778091444.tags","typename":"ItemTag"},"photos":
 
 # Condition
 Condition</p><a class="Spec__FlexedAnchor-sc-1oxis5o-0 fERCrt Flex-ych44r-0-a ciOBDh" href="/help_center/article/316/"><svg class="withSvg__Svg-gnmida-0 cXNnqZ" width="12" height="12" style="margin-left:var(--space-1)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"><path class="PathIcon-sc-1qr0hpz-1 kNnvTz PathIcon__Path-sc-1qr0hpz-0 hFTvWf" width="12" height="12" d="M6 0C9.3135 0 12 2.6865 12 6C12 9.3135 9.3135 12 6 12C2.6865 12 0 9.3135 0 6C0 2.6865 2.6865 0 6 0ZM4.3985 4.2215C4.542 3.371 5.3695 2.791 6.2495 2.933C7.1265 3.074 7.7165 3.8785 7.5735 4.7265C7.4835 5.059 7.2585 5.269 6.6685 5.6085L6.549 5.6765C5.631 6.2025 5.2535 6.611 5.2535 7.468H6.1645C6.1645 7.0375 6.342 6.8455 7.002 6.4675L7.122 6.3985C7.908 5.947 8.285 5.595 8.4635 4.9185C8.7 3.527 7.7665 2.2545 6.3945 2.0335C5.0245 1.8115 3.7275 2.7205 3.5 4.07L4.3985 4.2215ZM6.2275 9.7465V8.8355H5.3165V9.7465H6.2275Z" viewBox="0 0 12 12" fill="grey-3"></path></svg></a></div><p class="Text__ProductText-sc-40whai-0 fndAKa Text2__Text2Normal-sc-1tydp9s-0 jEADfG Text__Text2-sc-1lvlnjo-3 btEJox Text-sc-1lvlnjo-0 hzcXJu">Good</p>
