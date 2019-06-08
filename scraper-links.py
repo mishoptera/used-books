@@ -14,6 +14,3 @@ class Rspider(scrapy.Spider):
     def parse(self, response):
         for link in response.css('a.Link__StyledPlainLink-dkjuk2-2.hykQP.Link__StyledAnchor-dkjuk2-0'):
             print(link.attrib['href'])
-
-LOG_STDOUT = True
-LOG_FILE = 'scraper-links-output.txt'
