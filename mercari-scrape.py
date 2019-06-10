@@ -29,7 +29,7 @@ class Rspider(scrapy.Spider):
 
     start_urls = [
     # Condition: New, Status: For sale, Sort: most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -55,7 +55,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: New, Status: For sale, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -81,7 +81,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: New, Status: For sale, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=2",
@@ -107,7 +107,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=1&length=9999&minPrice=2500&sortBy=2",
 
     # Condition: New, Status: SOLD, Sort: most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -133,7 +133,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: New, Status: SOLD, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -159,7 +159,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: Like New, Status: SOLD, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=2",
@@ -185,7 +185,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=1&itemStatuses=2&length=9999&minPrice=2500&sortBy=2",
     # ****************************************************************************************************
     # Condition: Like New, Status: For sale, Sort: most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -211,7 +211,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: Like New, Status: For sale, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -237,7 +237,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: Like New, Status: For sale, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=2",
@@ -263,7 +263,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=1&length=9999&minPrice=2500&sortBy=2",
 
     # Condition: Like New, Status: SOLD, Sort: most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -289,7 +289,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: Like New, Status: SOLD, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -315,7 +315,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: Like New, Status: SOLD, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=2&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=2",
@@ -343,7 +343,7 @@ class Rspider(scrapy.Spider):
     # ************************************************************************************************************************************
     # ****************************************************************************************************
     # Condition: Good, Status: For sale, Sort: most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -369,7 +369,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: Good, Status: For sale, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -395,7 +395,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: Good, Status: For sale, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=2",
@@ -421,7 +421,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=1&length=9999&minPrice=2500&sortBy=2",
 
     # Condition: Good, Status: SOLD, Sort: most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -447,7 +447,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: Good, Status: SOLD, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -473,7 +473,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: Good, Status: SOLD, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=3&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=2",
@@ -500,7 +500,7 @@ class Rspider(scrapy.Spider):
 
     # ****************************************************************************************************
     # Condition: Fair,  Status: For sale, Sort: most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -526,7 +526,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: Fair, Status: For sale, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -552,7 +552,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: Fair, Status: For sale, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=2",
@@ -578,7 +578,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=1&length=9999&minPrice=2500&sortBy=2",
 
     # Condition: Fair, Status: SOLD, Sort: Most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -604,7 +604,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: Fair, Status: SOLD, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -630,7 +630,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: Fair, Status: SOLD, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=4&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=2",
@@ -658,7 +658,7 @@ class Rspider(scrapy.Spider):
     #*********************************************************
 
     # Condition: Poor,  Status: For sale, Sort: most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -684,7 +684,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: Poor, Status: For sale, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -710,7 +710,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: Poor, Status: For sale, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&maxPrice=599&minPrice=500&sortBy=2",
@@ -736,7 +736,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=1&length=9999&minPrice=2500&sortBy=2",
 
     # Condition: Poor, Status: SOLD, Sort: Most likes
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=30&maxPrice=300&sortBy=5",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=300&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=5",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=5",
@@ -762,7 +762,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&minPrice=2500&sortBy=5",
 
     # Condition: Poor, Status: SOLD, Sort: best match
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=30&maxPrice=300&sortBy=1",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=300&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=1",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=1",
@@ -788,7 +788,7 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&minPrice=2500&sortBy=1",
 
     # Condition: Poor, Status: SOLD, Sort: Newest first
-    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=30&maxPrice=300&sortBy=2",
+    "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=399&minPrice=301&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=499&minPrice=400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=599&minPrice=500&sortBy=2",
