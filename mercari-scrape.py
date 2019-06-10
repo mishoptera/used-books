@@ -812,6 +812,8 @@ class Rspider(scrapy.Spider):
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=2399&minPrice=2300&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&maxPrice=2499&minPrice=2400&sortBy=2",
     "https://www.mercari.com/search/?categoryIds=1487&facets=1&itemConditions=5&itemStatuses=2&length=9999&minPrice=2500&sortBy=2"]
+
+
     base_url = 'https://mercari.com'
     allowed_domains = ['mercari.com']
     products = []
@@ -826,37 +828,78 @@ class Rspider(scrapy.Spider):
 
     def second_parser(self, response):
         item = MercariItem()
+
         try:
+        # Count how many items there are:
             item_desc = response.css('p.Text__ProductText-sc-40whai-0.fndAKa')
-            item['condition'] = item_desc[0].css('::text').get()
-            item['shipping'] = item_desc[1].css('::text').get()
-            #Below is the problem. ~20-30% of pages don't specify a 'Brand' so it causes the spider to skip those pages.
-            item['brand'] = item_desc[2].css('a::text').get()
-            item['category'] = item_desc[3].css('a::text').getall()
-            item['posted'] = item_desc[4].css('::text').get()
+            num_items = len(item_desc)
 
-            seller_name = response.css('p.ProfileBar__Name-sc-2z5a96-0::text')
-            item['seller_name'] = seller_name[0].get()
+            if num_items == 5:
 
-            description = response.css('p.ItemDescription__DescriptionText-sc-1w7qr5f-0.RRzr::text')
-            item['description'] = description[0].getall()
+                item['condition'] = item_desc[0].css('::text').get()
+                item['shipping'] = item_desc[1].css('::text').get()
+                item['brand'] = item_desc[2].css('a::text').get()
+                item['category'] = item_desc[3].css('a::text').getall()
+                item['posted'] = item_desc[4].css('::text').get()
 
-            sold = response.css('p.Text4__Text4Bold-sc-13740j8-2.hYkkI::text')
-            item['sold'] = sold[0].get()
+                seller_name = response.css('p.ProfileBar__Name-sc-2z5a96-0::text')
+                item['seller_name'] = seller_name[0].get()
 
-            price = response.css('p.Text__Text7-sc-1lvlnjo-8.esBdtC.Text-sc-1lvlnjo-0.fiqSKf::text')
-            item['price'] = price[0].get()
+                description = response.css('p.ItemDescription__DescriptionText-sc-1w7qr5f-0.RRzr::text')
+                item['description'] = description[0].getall()
 
-            title = response.css('p.Text1__Text1Normal-sc-1lii7za-0.ifKbkO.Text__Text1-sc-1lvlnjo-2.gdOGft.Text-sc-1lvlnjo-0.cMHTdX::text')
-            item['title'] = title[0].get()
+                sold = response.css('p.Text4__Text4Bold-sc-13740j8-2.hYkkI::text')
+                item['sold'] = sold[0].get()
 
-            id = response.css('script#__NEXT_DATA__::text')
-            id_temp = id.extract_first().replace('"', '')
-            id_temp_search = re.search(r'\d+', id_temp)
-            item['id'] = id_temp_search
+                price = response.css('p.Text__Text7-sc-1lvlnjo-8.esBdtC.Text-sc-1lvlnjo-0.fiqSKf::text')
+                item['price'] = price[0].get()
 
-            print(item)
-            yield(item)
+                title = response.css('p.Text1__Text1Normal-sc-1lii7za-0.ifKbkO.Text__Text1-sc-1lvlnjo-2.gdOGft.Text-sc-1lvlnjo-0.cMHTdX::text')
+                item['title'] = title[0].get()
+
+                id = response.css('script#__NEXT_DATA__::text')
+                id_temp = id.extract_first().replace('"', '')
+                id_temp_search = re.search(r'\d+', id_temp)
+                id_temp_search2 = str(id_temp_search).replace("'", "")
+                id_temp_search3 = re.findall(r'\d+', id_temp_search2)[2]
+                item['id'] = id_temp_search3
+
+                print("Num items:", str(num_items))
+                print(item)
+                yield(item)
+
+            else:
+                item['condition'] = item_desc[0].css('::text').get()
+                item['shipping'] = item_desc[1].css('::text').get()
+                item['brand'] = 'NA'
+                item['category'] = item_desc[2].css('a::text').getall()
+                item['posted'] = item_desc[3].css('::text').get()
+
+                seller_name = response.css('p.ProfileBar__Name-sc-2z5a96-0::text')
+                item['seller_name'] = seller_name[0].get()
+
+                description = response.css('p.ItemDescription__DescriptionText-sc-1w7qr5f-0.RRzr::text')
+                item['description'] = description[0].getall()
+
+                sold = response.css('p.Text4__Text4Bold-sc-13740j8-2.hYkkI::text')
+                item['sold'] = sold[0].get()
+
+                price = response.css('p.Text__Text7-sc-1lvlnjo-8.esBdtC.Text-sc-1lvlnjo-0.fiqSKf::text')
+                item['price'] = price[0].get()
+
+                title = response.css('p.Text1__Text1Normal-sc-1lii7za-0.ifKbkO.Text__Text1-sc-1lvlnjo-2.gdOGft.Text-sc-1lvlnjo-0.cMHTdX::text')
+                item['title'] = title[0].get()
+
+                id = response.css('script#__NEXT_DATA__::text')
+                id_temp = id.extract_first().replace('"', '')
+                id_temp_search = re.search(r'\d+', id_temp)
+                id_temp_search2 = str(id_temp_search).replace("'", "")
+                id_temp_search3 = re.findall(r'\d+', id_temp_search2)[2]
+                item['id'] = id_temp_search3
+
+                print("Num items:", str(num_items))
+                print(item)
+                yield(item)
 
         except:
             pass
