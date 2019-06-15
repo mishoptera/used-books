@@ -47,27 +47,27 @@
             <form  action="/output" method="GET">
               <div class="form-group">
                 <label for="condition">Condition (new = 1, like new = 2, good = 3, fair = 4, poor = 5):</label>
-                <input type="text" id="condition" name='condition' placeholder="e.g. 1, 2, 3, 4, or 5">
+                <input input type="number" step="any" min="0" max="5" id="condition" name='condition' placeholder="1, 2, 3, 4, or 5">
               </div>
 
               <div class="form-group">
                 <label for="description">Description:</label>
-                <input type="text" id="description" name='description' placeholder="free write">
-                
+                <input type="text" id="description" name='description' placeholder="write as much as you like">
+
               </div>
               <div class="form-group">
-                <label for="free_shipping">Free Shipping:</label>
-                <input type="text" id="free_shipping" name='free_shipping' placeholder="e.g. yes or no">
+                <label for="free_shipping">Free Shipping (no = 0, yes = 1):</label>
+                <input type="number" step="any" min="0" max="1" id="free_shipping" name='free_shipping' placeholder="0 or 1">
               </div>
 
               <div class="form-group">
-                <label for="brand">Brand Included?:</label>
-                <input type="text" id="brand" name='brand' placeholder="e.g. yes or no">
+                <label for="brand">Brand Included (no = 0, yes = 1):</label>
+                <input type="number" step="any" min="0" max="1" id="brand" name='brand' placeholder="0 or 1">
               </div>
 
               <div class="form-group">
                 <label for="price">Proposed total price (including shipping cost):</label>
-                <input type="text" id="price" name='price' placeholder="no dollar signs please">
+                <input type="number" step="any" min="0" max="9999" id="price" name='price' placeholder="no dollar signs or commas please">
               </div>
 
 
