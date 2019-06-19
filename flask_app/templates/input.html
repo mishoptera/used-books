@@ -38,7 +38,7 @@
       <div class="container">
 
           <div class="starter-template">
-              <h2>Will your children's books get sold?</h2>
+              <h3><font size="7" <strong>Bye Bye Books!</strong></font></h3>
               <p>Tell me a little about your proposed Mercari posting...</p>
           </div>
 
@@ -46,33 +46,44 @@
 
             <form  action="/output" method="GET">
               <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" size = 30 id="title" name='title' placeholder="listing title">
+              </div>
+
+              <form  action="/output" method="GET">
+                <div class="form-group">
+                  <label for="brand_name">Brand:</label>
+                  <input type="text" size = 30 id="brand_name" name='brand_name' placeholder="you can leave this blank">
+                </div>
+
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <input type="text" size = 70 id="description" name='description' placeholder="write as much as you like">
+              </div>
+
+              <div class="form-group">
                 <label for="condition">Condition (new = 1, like new = 2, good = 3, fair = 4, poor = 5):</label>
                 <input input type="number" step="any" min="0" max="5" id="condition" name='condition' placeholder="1, 2, 3, 4, or 5">
               </div>
 
               <div class="form-group">
-                <label for="description">Description:</label>
-                <input type="text" id="description" name='description' placeholder="write as much as you like">
-
-              </div>
-              <div class="form-group">
-                <label for="free_shipping">Free Shipping (no = 0, yes = 1):</label>
-                <input type="number" step="any" min="0" max="1" id="free_shipping" name='free_shipping' placeholder="0 or 1">
+                <label for="free_shipping">Are you including free shipping? (yes = 1, no = 0):</label>
+                <input type="number" step="any" min="0" max="1" id="free_shipping" name='free_shipping' placeholder="1 or 0">
               </div>
 
-              <div class="form-group">
-                <label for="brand">Brand Included (no = 0, yes = 1):</label>
-                <input type="number" step="any" min="0" max="1" id="brand" name='brand' placeholder="0 or 1">
-              </div>
+              <!-- <div class="form-group">
+                <label for="brand">Are you specifying a product brand? (yes = 1, no = 0):</label>
+                <input type="number" step="any" min="0" max="1" id="brand" name='brand' placeholder="1 or 0">
+              </div> -->
 
               <div class="form-group">
-                <label for="price">Proposed total price (including shipping cost):</label>
-                <input type="number" step="any" min="0" max="9999" id="price" name='price' placeholder="no dollar signs or commas please">
+                <label for="price">Proposed total price (including shipping cost): $</label>
+                <input type="number" size = 30 step="any" min="0" max="9999" id="price" name='price' placeholder="integer only">
               </div>
 
 
               <div>
-                <button type="submit" class="btn btn-default btn-lg">Sell that sh*t!</button>
+                <button type="submit" class="btn btn-info btn-lg">Will your children's books sell?</button>
               </div>
 
             </form>
