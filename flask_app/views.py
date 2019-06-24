@@ -6,12 +6,12 @@ from flask_app.megastring import popularbrandsfunction
 
 
 @app.route('/')
-@app.route('/index')
-def index():
-    return render_template("index.html",
-       title = 'Home', user = { 'nickname': 'Misha' },
-       )
-@app.route('/input')
+# # @app.route('/index')
+# # def index():
+# #     return render_template("index.html",
+# #        title = 'Home', user = { 'nickname': 'Misha' },
+# #        )
+# @app.route('/input')
 def usedbooks_input():
     return render_template("input.html")
 
